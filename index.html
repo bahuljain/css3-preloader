@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<!--iOS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/loader.css">
+	<script src="js/loader/modernizr-2.6.2.min.js"></script>
+	<script src="js/loader/jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+
+		<div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+	</div>
+
+	<div>
+		<h1>YO</h1>
+
+		 <!-- Adds delay of 1000 millisecs until the image loads!! Cool huh :) -->
+		<img src="http://deelay.me/1000/dummy.jpg">
+	</div>
+
+	<!-- Once page loads close the loading screen!! -->
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('body').toggleClass('loaded');
+		});	
+	</script>
+
+</body>
+</html>
